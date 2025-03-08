@@ -1,0 +1,20 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.nav-link {
+    @apply text-lg font-medium hover:text-yellow-400 transition-colors;
+}
+
+.btn-primary {
+    @apply bg-yellow-500 text-black px-4 py-2 rounded-lg font-bold shadow-md hover:bg-yellow-400 transition-all;
+}
+
+.animate-fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
